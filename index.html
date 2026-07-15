@@ -1,102 +1,287 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maxicare - Healthcare You Can Count On</title>
-</head>
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; color: #333333;">
-
+  </head>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333333;
+    "
+  >
     <!-- HEADER / NAVIGATION -->
-    <header style="background-color: #0033a0; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #ffc72c;">
-        <div style="color: #ffffff; font-size: 24px; font-weight: bold; letter-spacing: 1px;">
-            MAXICARE
-        </div>
-        <nav>
-            <a href="#home" style="color: #ffffff; text-decoration: none; margin-left: 20px; font-size: 16px;">Home</a>
-            <a href="#plans" style="color: #ffffff; text-decoration: none; margin-left: 20px; font-size: 16px;">Our Plans</a>
-            <a href="#contact" style="color: #ffffff; text-decoration: none; margin-left: 20px; font-size: 16px;">Contact</a>
-        </nav>
+    <header
+      style="
+        background-color: #0033a0;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 4px solid #ffc72c;
+      "
+    >
+      <div
+        style="
+          color: #ffffff;
+          font-size: 24px;
+          font-weight: bold;
+          letter-spacing: 1px;
+        "
+      >
+        MAXICARE
+      </div>
+      <nav>
+        <a
+          href="#home"
+          style="
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+          "
+          >Home</a
+        >
+        <a
+          href="#plans"
+          style="
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+          "
+          >Our Plans</a
+        >
+        <a
+          href="#contact"
+          style="
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+          "
+          >Contact</a
+        >
+      </nav>
     </header>
 
     <!-- HERO SECTION -->
-    <section id="home" style="background-color: #e6f0fa; padding: 80px 20px; text-align: center;">
-        <h1 style="color: #0033a0; font-size: 36px; margin-bottom: 10px;">Live Your Best Life</h1>
-        <p style="font-size: 18px; color: #555555; max-width: 600px; margin: 0 auto 30px auto; line-height: 1.6;">
-            Access top-tier healthcare facilities and a wide network of doctors across the country. Get the peace of mind you and your family deserve.
-        </p>
-        <button onclick="handleInquiry()" style="background-color: #ffc72c; color: #0033a0; border: none; padding: 15px 30px; font-size: 18px; font-weight: bold; border-radius: 5px; cursor: pointer;">
-            Get a Free Quote
-        </button>
+    <section
+      id="home"
+      style="background-color: #e6f0fa; padding: 80px 20px; text-align: center"
+    >
+      <h1 style="color: #0033a0; font-size: 36px; margin-bottom: 10px">
+        Live Your Best Life
+      </h1>
+      <p
+        style="
+          font-size: 18px;
+          color: #555555;
+          max-width: 600px;
+          margin: 0 auto 30px auto;
+          line-height: 1.6;
+        "
+      >
+        Access top-tier healthcare facilities and a wide network of doctors
+        across the country. Get the peace of mind you and your family deserve.
+      </p>
+      <button
+        onclick="handleInquiry()"
+        style="
+          background-color: #ffc72c;
+          color: #0033a0;
+          border: none;
+          padding: 15px 30px;
+          font-size: 18px;
+          font-weight: bold;
+          border-radius: 5px;
+          cursor: pointer;
+        "
+      >
+        Get a Free Quote
+      </button>
     </section>
 
     <!-- HEALTHCARE PLANS -->
-    <section id="plans" style="padding: 60px 20px; text-align: center;">
-        <h2 style="color: #0033a0; font-size: 28px; margin-bottom: 40px;">Our Healthcare Plans</h2>
-        
-        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
-            
-            <!-- Plan Card 1 -->
-            <div style="background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 30px; width: 280px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-                <h3 style="color: #0033a0; margin-top: 0;">Individual & Family</h3>
-                <p style="color: #666666; font-size: 14px; line-height: 1.5; margin-bottom: 20px;">
-                    Comprehensive coverage tailored for individuals and families looking for primary care and hospitalization benefits.
-                </p>
-                <a href="#" style="color: #0033a0; font-weight: bold; text-decoration: none;">Learn More &rarr;</a>
-            </div>
+    <section id="plans" style="padding: 60px 20px; text-align: center">
+      <h2 style="color: #0033a0; font-size: 28px; margin-bottom: 40px">
+        Our Healthcare Plans
+      </h2>
 
-            <!-- Plan Card 2 -->
-            <div style="background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 30px; width: 280px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-                <h3 style="color: #0033a0; margin-top: 0;">Corporate & SME</h3>
-                <p style="color: #666666; font-size: 14px; line-height: 1.5; margin-bottom: 20px;">
-                    Flexible health maintenance programs designed to keep your workforce healthy, happy, and productive.
-                </p>
-                <a href="#" style="color: #0033a0; font-weight: bold; text-decoration: none;">Learn More &rarr;</a>
-            </div>
-
-            <!-- Plan Card 3 -->
-            <div style="background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 30px; width: 280px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-                <h3 style="color: #0033a0; margin-top: 0;">Prepaid Health Cards</h3>
-                <p style="color: #666666; font-size: 14px; line-height: 1.5; margin-bottom: 20px;">
-                    Ready-to-use health cards for emergency, preventive, and outpatient care. Perfect for specific, budget-friendly needs.
-                </p>
-                <a href="#" style="color: #0033a0; font-weight: bold; text-decoration: none;">Learn More &rarr;</a>
-            </div>
-
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 20px;
+        "
+      >
+        <!-- Plan Card 1 -->
+        <div
+          style="
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 30px;
+            width: 280px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+          "
+        >
+          <h3 style="color: #0033a0; margin-top: 0">Individual & Family</h3>
+          <p
+            style="
+              color: #666666;
+              font-size: 14px;
+              line-height: 1.5;
+              margin-bottom: 20px;
+            "
+          >
+            Comprehensive coverage tailored for individuals and families looking
+            for primary care and hospitalization benefits.
+          </p>
+          <a
+            href="#"
+            style="color: #0033a0; font-weight: bold; text-decoration: none"
+            >Learn More &rarr;</a
+          >
         </div>
+
+        <!-- Plan Card 2 -->
+        <div
+          style="
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 30px;
+            width: 280px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+          "
+        >
+          <h3 style="color: #0033a0; margin-top: 0">Corporate & SME</h3>
+          <p
+            style="
+              color: #666666;
+              font-size: 14px;
+              line-height: 1.5;
+              margin-bottom: 20px;
+            "
+          >
+            Flexible health maintenance programs designed to keep your workforce
+            healthy, happy, and productive.
+          </p>
+          <a
+            href="#"
+            style="color: #0033a0; font-weight: bold; text-decoration: none"
+            >Learn More &rarr;</a
+          >
+        </div>
+
+        <!-- Plan Card 3 -->
+        <div
+          style="
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 30px;
+            width: 280px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+          "
+        >
+          <h3 style="color: #0033a0; margin-top: 0">Prepaid Health Cards</h3>
+          <p
+            style="
+              color: #666666;
+              font-size: 14px;
+              line-height: 1.5;
+              margin-bottom: 20px;
+            "
+          >
+            Ready-to-use health cards for emergency, preventive, and outpatient
+            care. Perfect for specific, budget-friendly needs.
+          </p>
+          <a
+            href="#"
+            style="color: #0033a0; font-weight: bold; text-decoration: none"
+            >Learn More &rarr;</a
+          >
+        </div>
+      </div>
     </section>
 
     <!-- FOOTER -->
-    <footer id="contact" style="background-color: #333333; color: #ffffff; text-align: center; padding: 30px 20px; margin-top: 20px;">
-        <p style="margin: 0; font-size: 14px;">&copy; 2026 Maxicare Healthcare Corporation. All rights reserved.</p>
-        <p style="margin: 10px 0 0 0; font-size: 12px; color: #aaaaaa;">
-            Disclaimer: This is a placeholder design and is not officially affiliated with Maxicare.
-        </p>
+    <footer
+      id="contact"
+      style="
+        background-color: #333333;
+        color: #ffffff;
+        text-align: center;
+        padding: 30px 20px;
+        margin-top: 20px;
+      "
+    >
+      <p style="margin: 0; font-size: 14px">
+        &copy; 2026 Maxicare Healthcare Corporation. All rights reserved.
+      </p>
+      <p style="margin: 10px 0 0 0; font-size: 12px; color: #aaaaaa">
+        Disclaimer: This is a placeholder design and is not officially
+        affiliated with Maxicare.
+      </p>
     </footer>
 
     <!-- JAVASCRIPT PLACEHOLDER -->
     <script>
-        /**
-         * Inline JavaScript Placeholder
-         * Add your interactive scripts, API calls, or DOM manipulation here.
-         */
+      /**
+       * Inline JavaScript Placeholder
+       * Add your interactive scripts, API calls, or DOM manipulation here.
+       */
 
-        // Example function attached to the "Get a Free Quote" button
-        function handleInquiry() {
-            // Placeholder logic for button click
-            console.log("Inquiry button clicked.");
-            alert("Thank you for your interest! A Maxicare representative will be with you shortly.");
-            
-            // You can add logic here to open a modal, redirect to a form, etc.
-            // window.location.href = "/quote-form.html";
-        }
+      // Example function attached to the "Get a Free Quote" button
+      function handleInquiry() {
+        // Placeholder logic for button click
+        console.log("Inquiry button clicked.");
+        alert(
+          "Thank you for your interest! A Maxicare representative will be with you shortly.",
+        );
 
-        // Add event listeners once the DOM is fully loaded
-        document.addEventListener("DOMContentLoaded", function() {
-            console.log("Maxicare basic site loaded successfully.");
-            // Initialize sliders, fetch data, etc.
-        });
+        // You can add logic here to open a modal, redirect to a form, etc.
+        // window.location.href = "/quote-form.html";
+      }
+
+      // Add event listeners once the DOM is fully loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        console.log("Maxicare basic site loaded successfully.");
+        // Initialize sliders, fetch data, etc.
+      });
     </script>
 
-</body>
+    <!-- Maxicare SF Chatbot -->
+    <script type="text/javascript">
+      function initEmbeddedMessaging() {
+        try {
+          embeddedservice_bootstrap.settings.language = "en_US"; // For example, enter 'en' or 'en-US'
+
+          embeddedservice_bootstrap.init(
+            "00DBK00000BzDjZ",
+            "Maxicare_WebChatbot",
+            "https://maxicare--staging.sandbox.my.site.com/ESWMaxicareWebChatbot1721719657047",
+            {
+              scrt2URL:
+                "https://maxicare--staging.sandbox.my.salesforce-scrt.com",
+            },
+          );
+        } catch (err) {
+          console.error("Error loading Embedded Messaging: ", err);
+        }
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="https://maxicare--staging.sandbox.my.site.com/ESWMaxicareWebChatbot1721719657047/assets/js/bootstrap.min.js"
+      onload="initEmbeddedMessaging()"
+    ></script>
+  </body>
 </html>
